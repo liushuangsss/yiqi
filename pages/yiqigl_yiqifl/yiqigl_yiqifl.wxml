@@ -1,0 +1,8 @@
+<view class='fenlei_box'>
+  <view class='fenlei_list' wx:for="{{fenlei}}"  wx:for-item="fen" >{{fen.label}}<image src='/images/del.png' class='del_list'></image><image src='/images/upda.png' class='upda_list'></image></view>
+  <view class='add_fenlei'><image src='/images/yiqi_img20.png'></image>添加仪器分类</view>
+  <view class='add_input'><input type='text' placeholder='请输入添加的仪器分类名称' bindinput='write'></input></view>
+</view>
+<view class='sub'>
+  <button bindtap='fenleiAdd'>提交</button>
+</view>

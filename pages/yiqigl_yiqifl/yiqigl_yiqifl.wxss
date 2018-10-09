@@ -1,0 +1,11 @@
+.fenlei_box{background: #fff;padding: 30rpx;}
+.fenlei_list{font-size: 30rpx;color: #333;height:105rpx;line-height: 105rpx;border-bottom: 1rpx solid #ddd; }
+.add_fenlei{height: 100rpx;line-height: 100rpx;text-align: center;font-size: 26rpx;color: #0096E1}
+.add_fenlei image{width: 30rpx;height: 30rpx;vertical-align: middle;margin-right: 10rpx;}
+.add_input{margin: 10rpx 0 50rpx 0;}
+.add_input input{height: 80rpx;line-height: 80rpx;font-size: 30rpx;background: #f3f3f3;padding-left: 25rpx;border-radius: 5rpx;}
+.del_list,.upda_list{width: 48rpx;height: 48rpx;float: right;margin-top: 30rpx;}
+.upda_list{width: 40rpx;height: 40rpx;margin-top: 35rpx;}
+
+.sub{position: fixed;bottom:50rpx;height: 78rpx;line-height: 78rpx;text-align: center;width: 100% }
+.sub button{width: 700rpx;background:#0096E1;color: #fff;font-size: 30rpx;line-height: 78rpx;margin: 0 auto;border-radius: 10rpx;}

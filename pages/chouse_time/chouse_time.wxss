@@ -1,0 +1,93 @@
+/* pages/chouse_time/chouse_time.wxss */
+.name{
+  width:100%;
+  background: #fff;
+  padding: 40rpx 0;
+  overflow: hidden;
+}
+.names{
+  width:94%;
+  margin: auto;
+}
+.font30{
+  font-size: 30rpx;
+  font-weight: bold;
+  overflow: hidden;
+}
+.chouse,.chouses{
+  width:100%;
+  overflow: hidden;
+  border: 1rpx solid #f00;
+}
+.chouse text{
+  float: left;
+  padding:20rpx 28rpx;
+  margin-right: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  border: 1px solid #E6E6E6;
+}
+.chouses text{
+  float: left;
+  width:162rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  margin-right: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  border: 1px solid #E6E6E6;
+}
+.is_checked{
+  border: 1px solid #0096E1;
+  color: #0096E1;
+}
+.mar16{
+  margin-top: 16rpx;
+}
+.time{
+  width:50%;
+  float: right;
+  text-align: right;
+}
+.time image{
+  width:30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  padding-left: 10rpx;
+}
+.choose_status{
+  float: left;
+  width:199rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  border: 1px solid #E6E6E6;
+}
+.queren button{
+  width:610rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  background: #0096E1;
+  border-radius: 10rpx;
+  text-align: center;
+  color:#fff;
+  margin: 30rpx auto;
+}
+.choose_status_active{float: left;
+  width:199rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  color: #0096E1;
+  border: 1px solid #0096E1;}

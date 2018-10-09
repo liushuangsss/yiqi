@@ -1,0 +1,332 @@
+<!--pages/yuyue_xinxi.wxml-->
+<view class='box'>
+  <!-- 第一层切换 -->
+  <view class="head"> 
+    <view class='head_left'>
+      <image src='/images/left.png'></image><text>上一个设备</text>
+    </view>
+    <text class='fon30'>XRD测试 XRD数据分析</text>
+    <view class='head_right'>
+      <text>下一个设备</text><image src='/images/right.png'></image>
+    </view>
+  </view> 
+  <view class="tab-right"> 
+  <!-- 第一层切换 -->
+    <view class="right-item {{tabArr.curBdIndex=='0'? 'active' : ''}}">
+      <view class='cale_box' catchtap="tabFuns">
+        <text class='cale'>日历</text> 
+        <!-- 第二层切换 -->
+        <text class="cale_day1  {{tabArrs.curHdIndexs=='0'? 'cale_day_act' : ''}}"  id="tab-hds01" data-id="0">星期四7/24</text>
+        <text class="cale_day1  {{tabArrs.curHdIndexs=='1'? 'cale_day_act' : ''}}"  id="tab-hds02" data-id="1">星期五7/25</text>
+        <text class="cale_day1  {{tabArrs.curHdIndexs=='2'? 'cale_day_act' : ''}}"  id="tab-hds03" data-id="2">星期六7/25</text>
+      </view>
+      
+      <view>
+      <!-- 第二层切换 -->
+        <view class="right-item {{tabArrs.curBdIndexs=='0'? 'active' : ''}}">
+          <view class='time'>
+               <view class='wrap'>
+                <view>
+                    <view class='date-show'>
+                        <view class='lt-arrow' bindtap='lastMonth'>
+                            <image src='/images/left_t.png' mode='aspectFit'></image>
+                        </view>
+                        {{year}}年{{month}}月
+                        <view class='rt-arrow' bindtap='nextMonth'>
+                            <image src='/images/right_t.png' mode='aspectFit'></image>
+                        </view>
+                    </view>
+                </view>
+                <view class='header'>
+                    <view wx:for='{{date}}' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}<view></view></view>
+                </view>
+                <view class='date-box'>
+                    <view wx:for='{{dateArr}}' class='{{isToday == item.isToday ? "nowDay" : ""}}' data-date='{{item.isToday}}'>            
+                        <view class='date-head'>
+                            <view>{{item.dateNum}}</view>
+                        </view>
+                        <!-- <view class='date-weight'>{{item.weight}}</view> -->
+                    </view>
+                </view>
+            </view>
+              </view>
+          <!-- 第三层日历 -->
+          <view class="right-item {{tabArr1.curBdIndex1=='0'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>10:00</text>
+                <text>11:00</text>
+                <text>12:00</text>
+                <text>13:00</text>
+                <text>14:00</text>
+                <text>15:00</text>
+                <text>16:00</text>
+                <text>17:00</text>
+                <text>18:00</text>
+                <text>19:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>已预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text class='keyuyue1'>预约申请</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                </view>
+                <view class='tabri_box'>
+                  <text>已预约</text>
+                  <text class='keyuyue'></text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                  <text>已预约</text>
+                </view>
+                
+              </view>
+            </view>
+          </view> 
+          <view class="right-item {{tabArr1.curBdIndex1=='1'? 'active' : ''}}">
+            <view class='tab1_all'>
+              
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="right-item {{tabArr1.curBdIndex1=='2'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          
+          
+        </view> 
+        <view class="right-item {{tabArrs.curBdIndexs=='1'? 'active' : ''}}">
+          
+          
+          <view class="right-item {{tabArr1.curBdIndex1=='0'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>19:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view> 
+          
+          
+        </view> 
+        <view class="right-item {{tabArrs.curBdIndexs=='2'? 'active' : ''}}">
+          
+          
+          <view class="right-item {{tabArr1.curBdIndex1=='0'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>019:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view> 
+          
+          
+        </view>
+      </view>
+    </view> 
+    
+  </view>
+</view>
+<view class='set'><image src='/images/add.png'></image></view>
+<view class='tijiao'>
+  <button bindtap='modalcnt'>提交</button>
+</view>

@@ -1,0 +1,106 @@
+<!--pages/yiqifenlie/yiqifenlie.wxml-->
+<view class='yiqi_box'>
+<!--100%name  -->
+  <view class='name'>
+  <!--94%names  -->
+    <view class='names'>
+      <view>
+        <view class='font30'><text>仪器类型</text></view>
+        <block wx:for="{{name}}" wx:for-index="i" wx:key="id">
+          <view class='chouse'>
+            <view class='choose_statuses {{showes==item.id?"choose_status_actives":""}}' bindtap='tabstaes' data-id="{{item.id}}"><text>{{item.value}}</text></view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='name mar16'>
+    <view class='names'>
+      <view>
+        <view class='font30'><text>仪器状态</text></view>
+        <block wx:for="{{names}}" wx:for-index="i" wx:key="id">
+          <view class='chouses'>
+            <view class='choose_statuss {{showse==item.id?"choose_status_activees":""}}' bindtap='tabstase' data-id="{{item.id}}"><text>{{item.value}}</text></view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='name mar16'>
+    <view class='names'>
+      <view>
+        <view class='font30'><text>开始时间</text><view class='time'><text>{{chooseDate1}}</text><image src='/images/yiqi_time.png' catchtap='showModalBtn1'></image></view></view>
+         <block wx:for="{{list}}" wx:for-index="i" wx:key="id">
+          <view class='chouse1'>
+            <view class='choose_status {{show==item.id?"choose_status_active":""}}' bindtap='tabsta' data-id="{{item.id}}"><text>{{item.value}}</text></view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='name mar16'>
+    <view class='names'>
+      <view>
+        <view class='font30'><text>结束时间</text><view class='time'><text>{{chooseDate}}</text><image src='/images/yiqi_time.png' catchtap='showModalBtn'></image></view></view>
+        <block wx:for="{{lists}}" wx:for-index="i" wx:key="id">
+          <view class='chouse1'>
+            <view class='choose_status {{shows==item.id?"choose_status_active":""}}' bindtap='tabstas' data-id="{{item.id}}"><text>{{item.value}}</text></view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='queren'>
+    <button>确认</button>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" hidden="{{showModal}}"></view>
+<view class="modal-dialog" hidden="{{showModal}}">
+  <view class='modalBox'>
+    <view class='box'>
+      <view class='calendarBox'>
+        <view class='calendarTitle'>
+        <text class='prev' bindtap='prev'>上一月</text>
+          当前月份:
+          <text style='font-size:46rpx;'>{{thisMonth}}</text> 月
+          <text class='next' bindtap='next'>下一月</text>
+        </view>
+        <block wx:for="{{week}}" wx:key="item">
+          <view class="week">{{week[index]}}</view>
+        </block>
+        <block wx:for="{{weekNum}}" wx:key="item">
+          <view class="week" style="border-bottom:0;color:transparent">0</view>
+        </block>
+        <block wx:for="{{dayList}}" wx:key="item">
+          <view class='week' style="border-bottom:0;background-color:{{dayIndex>index?'#f1f1f1':(tapThis==index?'#1296db':'')}};color:{{tapThis==index?'white':''}}" catchtap="chooseDate" data-index="{{index}}" data-value="{{item}}">{{item}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal1" catchtouchmove="preventTouchMove" hidden="{{showModal1}}"></view>
+<view class="modal-dialog" hidden="{{showModal1}}">
+  <view class='modalBox'>
+    <view class='box'>
+      <view class='calendarBox'>
+        <view class='calendarTitle'>
+        <text class='prev' bindtap='prev1'>上一月</text>
+          当前月份:
+          <text style='font-size:46rpx;'>{{thisMonth1}}</text> 月
+          <text class='next' bindtap='next1'>下一月</text>
+        </view>
+        <block wx:for="{{week}}" wx:key="item">
+          <view class="week">{{week[index]}}</view>
+        </block>
+        <block wx:for="{{weekNum}}" wx:key="item">
+          <view class="week" style="border-bottom:0;color:transparent">0</view>
+        </block>
+        <block wx:for="{{dayList}}" wx:key="item">
+          <view class='week' style="border-bottom:0;background-color:{{dayIndex>index?'#f1f1f1':(tapThis==index?'#1296db':'')}};color:{{tapThis==index?'white':''}}" catchtap="chooseDate1" data-index="{{index}}" data-value="{{item}}">{{item}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

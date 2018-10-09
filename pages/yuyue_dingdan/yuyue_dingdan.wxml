@@ -1,0 +1,122 @@
+<!--pages/yuyue_dingdan/yuyue_dingdan.wxml-->
+<view class='box'>
+  <view class='sou'><input type='text' placeholder='搜索'></input></view>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">全部</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">预约申请</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">预约成功</view>
+    <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">预约失败</view>
+  </view>
+
+  <swiper current="{{currentTab}}" duration="300">
+  <swiper-item>
+    <view class='s_box'>
+      <view class='s_boxs'>
+        <view class='success'><text class='chenggong'>预约成功</text><text class='time'>2018年6月19日</text></view>
+        <view class='chanpin'>
+          <view class='left'><image src='/images/yiqi_img19.png'></image></view>
+        
+          <view class='right'>
+            <view>
+             <view><text>电感耦合等离子体质谱（ICP-MS）</text></view>
+             <view class='zhuangtai'><text>仪器状态：维修</text></view>
+             <view class='times'>
+              <view><text>09:00~10:00</text><text>11:00~12:00</text><image src='/images/bot.png' wx:if="{{checked==true}}" bindtap='setDates'></image><image src='/images/top.png' wx:if="{{checked==false}}" bindtap='setDates'></image></view>
+              <view wx:if="{{checked}}"><text>12:00~13:00</text><text>13:00~15:00</text></view>
+             </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='s_box'>
+      <view class='s_boxs'>
+        <view class='success'><text class='chenggong'>预约失败</text><text class='time'>2018年6月19日</text></view>
+        <view class='chanpin'>
+          <view class='left'><image src='/images/yiqi_img19.png'></image></view>
+        
+          <view class='right'>
+            <view>
+             <view><text>电感耦合等离子体质谱（ICP-MS）</text></view>
+             <view class='zhuangtai'><text>仪器状态：维修</text></view>
+             <view class='times'>
+              <view><text>09:00~10:00</text><text>11:00~12:00</text><image src='/images/bot.png'></image></view>
+              <view><text>12:00~13:00</text><text>13:00~15:00</text></view>
+             </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='s_box'>
+      <view class='s_boxs'>
+        <view class='success'><text class='chenggong'>预约成功</text><text class='time'>2018年6月19日</text></view>
+        <view class='chanpin'>
+          <view class='left'><image src='/images/yiqi_img19.png'></image></view>
+        
+          <view class='right'>
+            <view>
+             <view><text>电感耦合等离子体质谱（ICP-MS）</text></view>
+             <view class='zhuangtai'><text>仪器状态：维修</text></view>
+             <view class='times'>
+              <view><text>09:00~10:00</text><text>11:00~12:00</text><image src='/images/bot.png'></image></view>
+              <view><text>12:00~13:00</text><text>13:00~15:00</text></view>
+             </view>
+             
+            </view>
+          </view>
+          <view class='boths'></view>
+          <view class='errors'><text>失败原因：很抱歉设备突发故障，给您带来的不便敬请谅解！</text></view>
+        </view>
+      </view>
+    </view>
+    </swiper-item>
+  <swiper-item>
+    <view class='s_box'>
+      <view class='s_boxs'>
+        <view class='success'><text class='chenggong'>预约成功</text><text class='time'>2018年6月19日</text></view>
+        <view class='chanpin'>
+          <view class='left'><image src='/images/yiqi_img19.png'></image></view>
+        
+          <view class='right'>
+            <view>
+             <view><text>电感耦合等离子体质谱（ICP-MS）</text></view>
+             <view class='zhuangtai'><text>仪器状态：维修</text></view>
+             <view class='times'>
+              <view><text>09:00~10:00</text><text>11:00~12:00</text><image src='/images/bot.png'></image></view>
+              <view><text>12:00~13:00</text><text>13:00~15:00</text></view>
+             </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='s_box'>
+      <view class='s_boxs'>
+        <view class='success'><text class='chenggong'>预约成功</text><text class='time'>2018年6月19日</text></view>
+        <view class='chanpin'>
+          <view class='left'><image src='/images/yiqi_img19.png'></image></view>
+        
+          <view class='right'>
+            <view>
+             <view><text>电感耦合等离子体质谱（ICP-MS）</text></view>
+             <view class='zhuangtai'><text>仪器状态：维修</text></view>
+             <view class='times'>
+              <view><text>09:00~10:00</text><text>11:00~12:00</text><image src='/images/bot.png'></image></view>
+              <view><text>12:00~13:00</text><text>13:00~15:00</text></view>
+             </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item><view class='successes'><image src="/images/success.png"></image></view></swiper-item>
+  <swiper-item><view>失败</view></swiper-item>
+  </swiper>
+  <view class='nav'>
+  <view><image src='/images/yiqi_img13.png'></image>仪器</view>
+  <view class='yuyueco'><image src='/images/yiqi_img22.png'></image>预约</view>
+  <view><image src='/images/yiqi_img28.png'></image>我的</view>
+</view>
+</view> 

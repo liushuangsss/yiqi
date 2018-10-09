@@ -1,0 +1,18 @@
+<!--pages/gerenxinxi_xiugai/gerenxinxi_xiugai.wxml-->
+<view class='geren_box'>
+  <view class='head'>
+    <view class='headers'>
+      <view class='hea'><text>头像</text></view>
+      <view class='photo'><image class='image1' src='/images/touxiang.png'></image><image class='tup' src='/images/yiqi_img5.png'></image></view>
+    </view>  
+  </view>
+  <view class='new'>
+    <view class='news'>
+        <view class='news1 news2'><text class='nic'>昵称</text><text class='duo'>朵朵</text></view>
+    </view>
+    <view class='news'>
+        <view class='news1'><text class='nic'>联系方式</text><text class='duo'>18210280725</text></view>
+    </view>
+  </view>
+  <view><button>保存</button></view>
+</view>

@@ -1,0 +1,21 @@
+<view class='login_box'>
+  <image src='/images/yiqi_img1.png' class='login_img'></image>
+  <view class='login_list'>
+    <label>账号</label><input type='text' placeholder='请输入账号' name="mobile" bindinput='zhanghao'></input>
+  </view>
+  <view class='login_list'>
+    <label>密码</label><input type='password' placeholder='请输入密码' name="password" bindinput='password'></input>
+  </view>
+  <view class='btn_view'>
+    <button class="register" bindtap='toregister'>注册</button><button class="login_btn" bindtap='login'>登录</button>
+  </view>
+</view>
+
+<view class='togetpsd' bindtap='toget'>忘记密码？</view>
+
+<view class='{{show?"fail":"disno"}}'>
+  <view class='fail_center'>
+    <text class='fail_title'>您的授权还未通过，无法登录</text>
+    <text class='know' bindtap='knows'>知道了</text>
+  </view>
+</view>

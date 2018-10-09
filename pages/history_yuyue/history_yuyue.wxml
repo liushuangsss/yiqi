@@ -1,0 +1,85 @@
+
+<view class='box'>
+  <!-- 第一层切换 -->
+  <view class="swiper-tab" bindtap="tabFun"> 
+    <view class="swiper-tab-list {{tabArr.curHdIndex=='0'? 'on' : ''}}" id="tab-hd01" data-id="0">设备视角</view> 
+    <view class="swiper-tab-list {{tabArr.curHdIndex=='1'? 'on' : ''}}" id="tab-hd02" data-id="1">时间视角</view> 
+  </view> 
+  <view class="tab-right"> 
+  <!-- 第一层切换 -->
+    <view class="right-item {{tabArr.curBdIndex=='0'? 'active' : ''}}">
+      <view class='cale_box' catchtap="tabFuns">
+        <input type='text' placeholder='搜索'></input>
+      </view>
+      <view>
+        <view class='yiqi'><text class='cohui'>仪器列表</text><view class='flot'><text>筛选</text><image class='image2' src='/images/yjt.png'></image></view></view>
+        <view class='lizibox'><view class='lizi'><text>电感耦合等离子体质谱（ICP-MS）</text><text class='flot cohui'>2018-07-31</text></view></view>
+        <view class='padtop'>
+          <view class='win bian1'>
+            <view class='botm'>
+              <text class='week cohui'>星期四7/24</text><text class='shenqing'>预约申请</text>
+            </view>
+            <view class='time'>
+              <view><text>9:00~10:00</text><text>13:00~16:00</text><text>9:00~10:00</text></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class='lizibox'><view class='lizi'><text>电感耦合等离子体质谱（ICP-MS）</text><text class='flot cohui'>2018-07-31</text></view></view>
+        <view class='padtop'>
+          <view class='win bian2'>
+            <view class='botm'>
+              <text class='week cohui'>星期四7/24</text><text class='shenqing'>预约成功</text>
+            </view>
+            <view class='time'>
+              <view><text>9:00~10:00</text><text>13:00~16:00</text></view>
+            </view>
+          </view>
+        </view>
+
+        
+      </view>
+    </view> 
+    <view class="right-item {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+      <view class='cale_box' catchtap="tabFuns">
+        <input type='text' placeholder='搜索'></input>
+      </view>
+      <view>
+        <view class='yiqi'><text class='cohui'>月份</text><view class='flot'><text>2018年07月</text><image class='image2' src='/images/yjt.png'></image></view></view>
+        <view class='lizibox'><view class='lizi'><text>星期四7/24</text></view></view>
+        <view class=''>
+          <view class='win bian1 marg3'>
+            <view class='botm'>
+              <text class=''>10:00~11:00</text><text class='shenqing'>预约申请</text>
+            </view>
+            <view class='time1'>
+              <view><text class='cohui'>电感耦合等离子体质谱（ICP-MS）</text></view>
+            </view>
+          </view>
+        </view>
+      </view>
+       <view>
+        <view class='lizibox'><view class='lizi'><text>星期四7/24</text></view></view>
+        <view class='padtop'>
+          <view class='win bian2 marg3'>
+            <view class='botm'>
+              <text class=''>10:00~11:00</text><text class='shenqing'>预约成功</text>
+            </view>
+            <view class='time1'>
+              <view><text class='cohui'>电感耦合等离子体质谱（ICP-MS）</text></view>
+            </view>
+          </view>
+          <view class='win bian1 tops'>
+            <view class='botm'>
+              <text class=''>10:00~11:00</text><text class='shenqing'>预约申请</text>
+            </view>
+            <view class='time1'>
+              <view><text class='cohui'>电感耦合等离子体质谱（ICP-MS）</text></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view> 
+  </view>
+</view>

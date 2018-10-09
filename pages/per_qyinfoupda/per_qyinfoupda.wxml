@@ -1,0 +1,12 @@
+<view class='info'> 
+  <text>头像</text><image src='{{imgsrc}}' class='avator' bindtap='updataimg'></image><image src='/images/yiqi_img5.png' class='right_jt right_jt1'></image>
+</view>
+<view class='upda'>
+  <view class='upda_list'><label>服务商名称</label><input type='text' value='{{myData.providerName}}'></input></view>
+  <view class='upda_list'><label>服务商联系人</label><input type='text' placeholder='张三三'  value='{{myData.providerUserName}}'></input></view>
+  <view class='upda_list'><label>联系方式</label><input type='text' placeholder='18210280725'  value='' ></input></view>
+  <view class='upda_list' bindtap='kongxian'><label>空闲时间</label><image src='/images/yiqi_img5.png' class='right_jt'></image><text class='day'>每日/工作日</text></view>
+</view>
+<view class='save'>
+  <button>保存</button>
+</view>

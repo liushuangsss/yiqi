@@ -1,0 +1,5 @@
+page{background: #fff;}
+.radio{width: 100%;height: 105rpx;line-height: 105rpx;border-bottom: 1rpx solid #ddd;}
+.radio-group{display: flex;flex-direction: column;padding: 0 30rpx;}
+.success_btn{margin-top: 90rpx;}
+.success_btn button{width: 690rpx;height: 78rpx;line-height: 78rpx;color: #fff;background: #0096E1;margin: 0 auto;border-radius: 10rpx;font-size: 30rpx;}

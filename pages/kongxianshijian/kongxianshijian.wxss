@@ -1,0 +1,16 @@
+.choose_date{height: 88rpx;line-height: 88rpx;font-size:32rpx;background: #fff;margin-bottom: 60rpx;padding:0 30rpx; }
+.picker{float: right;width: 100%;text-align: right}
+.section__title{display: inline-block;width: 50%;}
+.picker_box{overflow: hidden;float: right;width: 50%;}
+.right_jt{width: 18rpx;height: 19rpx;margin-left: 20rpx;}
+
+.choose_time{background: #fff;padding:0 30rpx;line-height: 87rpx;font-size: 32rpx;}
+.choose_time .section{border-bottom: 1rpx solid #E5E5E5;}
+.choose_time .section:last-child{border-bottom: 0;}
+
+.sub{position: fixed;bottom:50rpx;height: 78rpx;line-height: 78rpx;text-align: center;width: 100% }
+.sub button{width: 700rpx;background:#0096E1;color: #fff;font-size: 30rpx;line-height: 78rpx;margin: 0 auto;border-radius: 10rpx;}
+.yuyue_time{margin-top: 60rpx;padding: 30rpx;background: #fff;}
+.tiqian{font-size: 32rpx;line-height: 50rpx;}
+.yuyue_time input{ background: #EEEFF0;border-radius: 8rpx;height: 77rpx;line-height: 77rpx;margin-top: 20rpx;padding-left: 20rpx;font-size: 30rpx;}
+

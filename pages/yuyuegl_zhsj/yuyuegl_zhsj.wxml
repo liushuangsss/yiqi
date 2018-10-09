@@ -1,0 +1,556 @@
+
+<view class='box'>
+  <!-- 第一层切换 -->
+  <view class="swiper-tab" bindtap="tabFun"> 
+    <view class="swiper-tab-list {{tabArr.curHdIndex=='0'? 'on' : ''}}" id="tab-hd01" data-id="0">综合视角</view> 
+    <view class="swiper-tab-list {{tabArr.curHdIndex=='1'? 'on' : ''}}" id="tab-hd02" data-id="1">设备视角</view> 
+    <view class="swiper-tab-list {{tabArr.curHdIndex=='2'? 'on' : ''}}" id="tab-hd03" data-id="2">时间视角</view> 
+  </view> 
+  <view class="tab-right"> 
+  <!-- 第一层切换 -->
+    <view class="right-item {{tabArr.curBdIndex=='0'? 'active' : ''}}">
+      <view class='cale_box' catchtap="tabFuns">
+        <text class='cale'>日历</text> 
+        <!-- 第二层切换 -->
+        <text class="cale_day1  {{tabArrs.curHdIndexs=='0'? 'cale_day_act' : ''}}"  id="tab-hds01" data-id="0">星期四7/24</text>
+        <text class="cale_day1  {{tabArrs.curHdIndexs=='1'? 'cale_day_act' : ''}}"  id="tab-hds02" data-id="1">星期五7/25</text>
+        <text class="cale_day1  {{tabArrs.curHdIndexs=='2'? 'cale_day_act' : ''}}"  id="tab-hds03" data-id="2">星期六7/25</text>
+      </view>
+      
+      <view>
+      <!-- 第二层切换 -->
+        <view class="right-item {{tabArrs.curBdIndexs=='0'? 'active' : ''}}">
+          <view class='tab_cp' bindtap='shaixuan' >
+            设备名称:<text class='name_tab'>XRD测试....</text><image src='/images/right_t.png' class='day_right sx_img' mode='aspectFit'></image><text class='shaixuan_tab'>筛选</text>
+          </view>
+          <view class='calender time'>
+        <view class='wrap'>
+    <view>
+        <view class='date-show'>
+            <view class='lt-arrow' bindtap='lastMonth'>
+                <image src='/images/left_t.png' mode='aspectFit'></image>
+            </view>
+            {{year}}年{{month}}月
+            <view class='rt-arrow' bindtap='nextMonth'>
+              <image src='/images/right_t.png' mode='aspectFit'></image>
+            </view>
+        </view>
+    </view>
+    <view class='header'>
+        <view wx:for='{{date}}' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}<view></view></view>
+    </view>
+    <view class='date-box'>
+        <view wx:for='{{dateArr}}' bindtap='addyuyue' class='{{isToday == item.isToday ? "nowDay" : ""}} {{yuyue==item.isToday?"yuyue":""}}' data-date='{{item.isToday}}' wx:key="item.isToday" >      
+            <view class='date-head'>
+              <view>{{item.dateNum}}</view>
+            </view>
+            <!-- <view class='date-weight'>{{item.weight}}</view> -->
+        </view>
+    </view>
+</view>
+      </view>
+          <!-- 第三层日历 -->
+          <view class="right-item {{tabArr1.curBdIndex1=='0'? 'active' : ''}}">
+            <!-- <view class='set'><image src='/images/set.png'></image></view> -->
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='addstatus'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view> 
+          <view class="right-item {{tabArr1.curBdIndex1=='1'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="right-item {{tabArr1.curBdIndex1=='2'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='day_cont'>
+            <view class='con_tit'><text>月份</text> 2018年07月<image src='/images/yjt.png' class='day_right'></image></view>
+            <view class='day_a'>
+              <view class='zhouji'>星期四7/24</view>
+              <view class='yuyue_cont'>
+                <view>10:00-11:00　预约申请</view>
+                <view><image src='/images/yiqi_img25.png' class='info_img'></image>瑶瑶i  152****0825</view>
+                <view class='hui_cont'>电感耦合等离子体质谱（ICP-MS）</view>
+              </view>
+              <view class='sildes'></view>
+            </view>
+            <view class='day_a'>
+              <view class='zhouji'>星期五7/25</view>
+              <view class='yuyue_cont'>
+                <view>10:00-11:00　预约申请</view>
+                <view><image src='/images/yiqi_img25.png' class='info_img'></image>瑶瑶i  152****0825</view>
+                <view class='hui_cont'>电感耦合等离子体质谱（ICP-MS）</view>
+              </view>
+              <view class='sildes'></view>
+              <view class='yuyue_cont'>
+                <view>10:00-11:00　预约申请</view>
+                <view><image src='/images/yiqi_img25.png' class='info_img'></image>瑶瑶i  152****0825</view>
+                <view class='hui_cont'>电感耦合等离子体质谱（ICP-MS）</view>
+              </view>
+              <view class='sildes'></view>
+            </view>
+          </view>
+          <view class='day_cont'>
+            <view class='con_tit'><text>仪器列表</text> 筛选<image src='/images/yjt.png' class='day_right'></image></view>
+            <view class='day_a'>
+              <view class='zhouji'>电感耦合等离子体质谱（ICP-MS） <text class='sh_time'>2018-07-31</text></view>
+              <view class='yuyue_cont'>
+                <view>星期五7/25　预约申请</view>
+                <view><image src='/images/yiqi_img25.png' class='info_img'></image>瑶瑶i  152****0825</view>
+                <view class='hui_cont'><text class='yy_time'>09:00~10:00</text><text class='yy_time'>09:00~10:00</text><text class='yy_time'>09:00~10:00</text></view>
+              </view>
+             <view class='zhouji'>电感耦合等离子体质谱（ICP-MS） <text class='sh_time'>2018-07-31</text></view>
+              <view class='yuyue_cont yuyue_su'>
+                <view>星期五7/25　预约申请</view>
+                <view><image src='/images/yiqi_img25.png' class='info_img'></image>瑶瑶i  152****0825</view>
+                <view class='hui_cont'><text class='yy_time'>09:00~10:00</text><text class='yy_time'>09:00~10:00</text><text class='yy_time'>09:00~10:00</text></view>
+              </view>
+            </view>
+          </view>
+        </view> 
+        <view class="right-item {{tabArrs.curBdIndexs=='1'? 'active' : ''}}">
+          <view class='tab_cp' catchtap="tabFun1">
+            <text class="tab1_name {{tabArr1.curHdIndex1=='0'? 'tab1_nameact' : ''}}" id="tab-hd101" data-id="0">XRD测1试 XR...</text>
+            <text class="tab1_name {{tabArr1.curHdIndex1=='1'? 'tab1_nameact' : ''}}" id="tab-hd101" data-id="1">XRD测试 XR...</text>
+            <text class="tab1_name {{tabArr1.curHdIndex1=='2'? 'tab1_nameact' : ''}}" id="tab-hd101" data-id="2">XRD测试 XR...</text>
+          </view>
+          
+          <view class="right-item {{tabArr1.curBdIndex1=='0'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view> 
+          <view class="right-item {{tabArr1.curBdIndex1=='1'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="right-item {{tabArr1.curBdIndex1=='2'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view> 
+        <view class="right-item {{tabArrs.curBdIndexs=='2'? 'active' : ''}}">
+          <view class='tab_cp' catchtap="tabFun1">
+            <text class="tab1_name {{tabArr1.curHdIndex1=='0'? 'tab1_nameact' : ''}}" id="tab-hd101" data-id="0">XRD2测试 XR...</text>
+            <text class="tab1_name {{tabArr1.curHdIndex1=='1'? 'tab1_nameact' : ''}}" id="tab-hd101" data-id="1">XRD测试 XR...</text>
+            <text class="tab1_name {{tabArr1.curHdIndex1=='2'? 'tab1_nameact' : ''}}" id="tab-hd101" data-id="2">XRD测试 XR...</text>
+          </view>
+          
+          <view class="right-item {{tabArr1.curBdIndex1=='0'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view> 
+          <view class="right-item {{tabArr1.curBdIndex1=='1'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="right-item {{tabArr1.curBdIndex1=='2'? 'active' : ''}}">
+            <view class='tab1_all'>
+              <view class='tab1_left'>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+                <text>09:00</text>
+              </view>
+              <view class='tab1_right'>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+                <view class='tabri_box'>
+                  <text>取消预约</text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text class='keyuyue'></text>
+                  <text>取消预约</text>
+                  <text class='yy_success'>预约成功</text>
+                  <text>取消预约</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view> 
+   <view class="right-item {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+      <view class='shebei_box'>
+        <view class='shebei_1'>
+          <image src='/images/zjt.png' class='sb_leftjt'></image><text class='sb_prev'>上一个设备</text>
+          <text class='sb_name1'>XRD测试 XRD数据分析</text>
+          <text  class='sb_next'>下一个设备</text><image src='/images/yiqi_img30.png' class='sb_rightjt'></image>
+        </view>
+        <view class='day_cont'>
+            <view class='con_tit'><text>仪器列表</text> 筛选<image src='/images/yjt.png' class='day_right'></image></view>
+            <view class='day_a' wx:for="{{sbData}}"  wx:for-item="item">
+              <view class='zhouji'>{{item.instrumentName}} <text class='sh_time'>{{item.reserveDate}}</text></view>
+              <view class='yuyue_cont'>
+                <view>星期五7/25　{{item.reserveStatus}}</view>
+                <view><image src='/images/yiqi_img25.png' class='info_img'></image>{{item.userName}}  {{item.mobile}}</view>
+                <view class='hui_cont'><text class='yy_time' wx:for="{{item.periodList}}" wx:for-item="items">{{items}}</text></view>
+              </view>
+            </view>
+          </view>
+      </view>
+    </view> 
+    <view class="right-item {{tabArr.curBdIndex=='2'? 'active' : ''}}">
+     <view class='shebei_box '>
+        <view class='shebei_1'>
+          <image src='/images/zjt.png' class='sb_leftjt'></image><text class='sb_prev'>上一个设备</text>
+          <text class='sb_name1'>XRD测试 XRD数据分析</text>
+          <text  class='sb_next'>下一个设备</text><image src='/images/yiqi_img30.png' class='sb_rightjt'></image>
+        </view>
+        <view class='day_cont'>
+            <view class='con_tit'><text>月份</text> 2018年07月<image src='/images/yjt.png' class='day_right'></image></view>
+            <view class='day_a'>
+              <block wx:for="{{sbData}}" wx:for-item="itemsb">
+                <view class='zhouji'>星期四7/24<text class='sh_time'>{{itemsb.reserveDate}}</text></view>
+                <view class='yuyue_cont'>
+                  <view class='time_box'><text>{{itemsb.instrumentName}}</text>{{itemsb.reserveStatus}}</view>
+                  <view><image src='/images/yiqi_img25.png' class='info_img'></image>{{itemsb.userName}}  {{itemsb.mobile}}</view>
+                  <view class='hui_cont'>
+                    <text class='yy_time' wx:for="{{itemsb.periodList}}"  wx:for-item="itemsbs">{{itemsbs}}</text>
+                  </view>
+                </view>
+                <view class='sildes'></view>
+              </block>
+            </view>
+            
+          </view>
+      </view>
+    </view> 
+  </view>
+</view>
+<!-- <view class='tijiao'>
+  <button>提交</button>
+</view> -->
+<view class='nav'>
+  <view class='nav_list hover'>
+    <image src='/images/yiqi_img23.png'></image>预约管理
+  </view>
+  <view class='nav_list' bindtap='yqgl'>
+    <image src='/images/yiqi_img15.png'></image>仪器管理
+  </view>
+  <view class='nav_list'  bindtap='personal'>
+    <image src='/images/yiqi_img28.png'></image>个人中心
+  </view>
+</view>

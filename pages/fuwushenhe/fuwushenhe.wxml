@@ -1,0 +1,24 @@
+<view class='box'>
+  <view><image src='/images/yiqi_img26.png' class='img1'></image></view>
+  <view class='box2'>
+    <text class='title'>电感耦合等离子体质谱（ICP-MS）</text>
+    <text class='time'>09:00~10:00</text>
+  </view>
+</view>
+<view class='box'>
+  <view><image src='/images/yiqi_img26.png' class='img1'></image></view>
+  <view class='box2'>
+    <text class='title'>电感耦合等离子体质谱（ICP-MS）</text>
+    <text class='time'>09:00~10:00</text>
+  </view>
+</view>
+<view class='box'>
+  <view><image src='/images/yiqi_img26.png' class='img1'></image></view>
+  <view class='box2'>
+    <text class='title'>电感耦合等离子体质谱（ICP-MS）</text>
+    <text class='time'>09:00~10:00</text>
+  </view>
+</view>
+<view class='sub'>
+  <button>提交</button>
+</view>

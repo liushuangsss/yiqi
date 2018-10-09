@@ -1,0 +1,4 @@
+<view >
+  <view class='list1' bindtap='yyshYiqi'>仪器预约审核<image src='/images/yiqi_img5.png' class='right_jt'></image></view>
+  <view class='list1' bindtap='yyshFuwu'>服务申请审核<image src='/images/yiqi_img5.png' class='right_jt'></image></view>
+</view>

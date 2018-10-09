@@ -1,0 +1,57 @@
+<view class='search' bindtap='searchyq'>
+  <icon type='search' size='12'></icon><text>搜索</text>
+  <input type='text' placeholder='搜索'></input>
+</view>
+<view class='gl_cont'>
+  <view class='gl_top'>
+    <view class="swiper-tab" bindtap="tabFun"> 
+      <view  wx:for="{{navbar}}" wx:for-item="nav" class="swiper-tab-list {{tabArr.curHdIndex==nav.value? 'on' : ''}}"  data-id="{{nav.value}}" data-idx="{{index}}" data-idxx="{{nav.label}}">{{nav.label}}</view> 
+    </view> 
+    <view class='right_top' bindtap='addleibie'><image src='/images/yiqi_img21.png'></image></view>
+  </view>  
+</view>  
+
+
+<view class="tab"> 
+  <view class="tab-right"> 
+    <view class="right-item active" >
+      <view class='box1' bindtap='addyq'>
+        <view class='add_yiqi'><image src='/images/yiqi_img24.png'></image>新增仪器</view>
+      </view>
+      <view class='scroll_view'>
+        <view class="box_list" wx:for="{{yiqiData}}" wx:for-item="item">
+          <view class='list_one'>
+            <view class='list_img'><image src='/images/yiqi_img19.png'></image></view>
+            <view class='list_desc'>
+              <text class='title_name'>{{item.name}}</text>
+              <text class='desc_cont'>品 牌：{{item.brand}}</text>
+              <text class='desc_cont'>型 号：{{item.version}}</text>
+              <text>仪器状态：{{item.status}}</text>
+            </view>
+          </view>
+          <view class='list_two'>
+            <text>时间表</text>
+            <text>编辑详情</text>
+            <text bindtap='lookxq' data-ids="{{item.id}}">查看详情</text>
+          </view>
+        </view>
+      </view>
+    </view> 
+  </view>
+ </view>
+
+
+
+
+
+<view class='nav'>
+  <view class='nav_list' bindtap='yuyuegl'>
+    <image src='/images/yiqi_img13.png'></image>预约管理
+  </view>
+  <view class='nav_list hover' bindtap='yqgl'>
+    <image src='/images/yiqi_img22.png'></image>仪器管理
+  </view>
+  <view class='nav_list' bindtap='personal'>
+    <image src='/images/yiqi_img28.png'></image>个人中心
+  </view>
+</view>

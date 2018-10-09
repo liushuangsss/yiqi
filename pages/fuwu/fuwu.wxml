@@ -1,0 +1,29 @@
+<!--pages/fuwu/fuwu.wxml-->
+<view class='fuwu_box'>
+  <view class='fuwu_one'>
+    <view class='name'>
+      <text>服务类型名称</text>
+    </view>
+    <view class='content'>
+      <text>以真诚和专业，为客户提供真正有价值的,一站式传播解决方案</text>
+    </view>
+    <view class='name'>
+      <text>服务类型名称</text>
+    </view>
+    <view class='content'>
+      <text>以真诚和专业，为客户提供真正有价值的,一站式传播解决方案</text>
+    </view>
+    <view class='name'>
+      <text>服务类型名称</text>
+    </view>
+    <view class='content'>
+      <text>以真诚和专业，为客户提供真正有价值的,一站式传播解决方案</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <view><image src='/images/fuwu_fuwu.png'></image>服务</view>
+    <view><image src='/images/yiqi_img13.png'></image>仪器</view>
+    <view><image src='/images/yiqi_img15.png'></image>预约</view>
+    <view><image src='/images/yiqi_img28.png'></image>我的</view>
+  </view>
+</view>

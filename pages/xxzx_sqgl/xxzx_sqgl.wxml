@@ -1,0 +1,15 @@
+<view class='shouq_box'>
+  <view>用户<image src='/images/yiqi_img2.png'></image><text>瑶瑶i 152****0825</text>申请注册浏览您的仪器。</view>
+  <view class='sq_btn'><button bindtap='jujue'>拒绝</button><button>同意并授权</button></view>
+</view>
+
+<view class='{{show?"jujue_tc":"disno"}}'>
+  <view class='jujue_cont'>
+    <text class='jujue_title'>拒绝授权的原因</text>
+    <textarea placeholder='请输入拒绝预约申请的原因' class='write_info'></textarea>
+    <view class='btn_jujue'>
+      <button bindtap='close'>关闭</button>
+      <button class='success'>确认</button>
+    </view>
+  </view>
+</view>

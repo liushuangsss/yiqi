@@ -1,0 +1,30 @@
+<view class='xq_box'>
+  <image src='{{imgsrc}}{{xqData.photo}}' class='xq_img'></image>
+</view>
+<view class='xq_list'>
+  <view class='xq_title'>电感耦合等离子体质谱（ICP-MS）</view>
+  <view class='cons'>
+    <text class='con_list'>品 牌：{{xqData.brand}}</text>
+    <text class='con_list'>型 号： {{xqData.version}}</text>
+    <text class='con_list'>类 别:  {{xqData.category}}</text>
+  </view>
+  <view class='info_list'>
+    <label>地址</label><text>{{xqData.address}}</text>
+  </view>
+  <view class='info_list'>
+    <label>地址</label><text>{{xqData.service}}</text>
+  </view>
+  <view class='status'><label>仪器状态</label>{{xqData.status}}</view>
+</view>
+
+<view class='jianjie'>
+  <view class='xq_title'>仪器简介</view>
+  <view class='jianjie_cont'>
+    <text class='jianjie_title'>性能参数：</text>
+    <text class='shuomming'>{{xqData.parameter}}
+    </text>
+    <text class='jianjie_title'>主要功能与用途：</text>
+    <text class='shuomming'>{{xqData.purpose}}
+    </text>
+  </view>
+</view>

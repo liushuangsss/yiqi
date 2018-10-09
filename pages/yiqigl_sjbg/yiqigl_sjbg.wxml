@@ -1,0 +1,36 @@
+<view>
+  <view class='choose_date'>
+    <view class="section">
+      <view class="section__title">选择日期</view>
+      <picker mode="date" value="{{date}}"  bindchange="bindDateChange" class='picker_box'>
+        <view class="picker">
+          <text>{{date}}</text><image src='/images/yiqi_img5.png' class='right_jt'></image>
+        </view>
+      </picker>
+    </view>
+  </view>
+
+
+  <view class='choose_time'>
+    <view class="section">
+      <view class="section__title">开始时间</view>
+      <picker mode="time" value="{{time}}" bindchange="bindTimeChange" class='picker_box'>
+        <view class="picker">
+          {{time}}<image src='/images/yiqi_img5.png' class='right_jt'></image>
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">结束时间</view>
+      <picker mode="time" value="{{time1}}" bindchange="bindTimeChange1" class='picker_box'>
+        <view class="picker">
+          {{time1}}<image src='/images/yiqi_img5.png' class='right_jt'></image>
+        </view>
+      </picker>
+    </view>
+  </view>
+</view>
+
+<view class='sub'>
+  <button>提交</button>
+</view>

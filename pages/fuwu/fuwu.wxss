@@ -1,0 +1,27 @@
+page{
+  background: #fff;
+}
+/* pages/fuwu/fuwu.wxss */
+.fuwu_box{
+  width:100%;
+}
+.fuwu_one{
+  width:90%;
+  margin: 20rpx auto;
+}
+.name{
+  line-height: 28rpx;
+  font-size: 30rpx;
+  margin: 43rpx 0 43rpx 0;
+}
+.content{
+  height: 32rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  padding-bottom: 60rpx;
+  color: #999999;
+  border-bottom: 1rpx solid #EDEDED; 
+}
+.footer{position: fixed;bottom: 0;height: 97rpx;line-height: 97rpx;width: 100%;background: #fff;display: flex;flex-direction: row}
+.footer view image{width: 35rpx;height: 34rpx;}
+.footer view{display: flex;width: 25%;justify-content: center;align-items: center;flex-direction: column;line-height: 40rpx;}

@@ -1,0 +1,15 @@
+.info{background: #fff;padding: 30rpx;font-size: 26rpx;overflow: hidden;height: 121rpx;line-height: 121rpx;display: flex;flex-direction: row;align-items: center;margin-bottom: 20rpx;border-top: 1rpx solid #ddd;}
+.right_jt{width: 18rpx;height: 19rpx;vertical-align: middle;margin-left:30rpx;float: right;margin-top: 50rpx;}
+.avator{width:81rpx;height: 81rpx;margin-left: 20rpx;border-radius: 50%;vertical-align: middle}
+.info text{display: inline-block;width: 80%;}
+.right_jt1{margin-top: 20rpx;}
+.upda{background: #fff;padding:0 30rpx;}
+.day{float: right;}
+
+
+.upda_list{height:110rpx;line-height: 110rpx;border-bottom: 1rpx solid #ddd; }
+.upda_list:last-child{border-bottom: 0}
+.upda_list label{display: inline-block;width:170rpx;font-size: 26rpx; }
+.upda_list input{float: right;width: 500rpx;text-align: right;height: 110rpx;line-height: 110rpx;font-size: 26rpx;}
+.save{margin-top: 108rpx;}
+.save button{width:610rpx;height: 78rpx;line-height: 78rpx;text-align: center;background: #0096E1;color: #fff;font-size:30rpx;margin: 0 auto;border-radius: 10rpx;  }

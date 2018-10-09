@@ -1,0 +1,37 @@
+<!--pages/fuwushenqing/fuwushenqing.wxml-->
+<view class='fuwushenqingbox'>
+  <view class='fuwuleixing'>
+    <text class='fuwuleixingt1'>服务类型</text><text class='fuwuleixingt2'>环境仪器检测</text>
+  </view>
+  <view class='fuwumiaoshu'>
+    <view class='miaoshu'><text>需求描述</text></view>
+    <view><input type='text' placeholder='请输入详细内容'></input></view>
+  </view>
+  <view class='fuwumiaoshu'>
+    <view class='miaoshu'><text>备注</text></view>
+    <view><input type='text' placeholder='请输入详细内容'></input></view>
+  </view>
+  <view class='fuwumiaoshu'>
+    <view class='miaoshu'><text>照片展示</text></view>
+    <view class='photo'>
+      <image src='/images/tianjia_03.jpg'></image>
+      <image src='/images/tianjia_03.jpg'></image>
+      <image src='/images/tianjia_03.jpg'></image>
+    </view>
+  </view>
+  <view class='danwei'>
+    <view class='name'><text>单位名称</text></view>
+    <view><input type='text' placeholder='请输入'></input></view>
+  </view>
+  <view class='danwei'>
+    <view class='name'><text>联系人</text></view>
+    <view><input type='text' placeholder='请输入'></input></view>
+  </view>
+  <view class='danwei'>
+    <view class='name'><text>联系方式</text></view>
+    <view><input type='text' placeholder='请输入'></input></view>
+  </view>
+  <view class='sub'>
+    <button>提交</button>
+  </view>
+</view>

@@ -1,0 +1,90 @@
+.search{width: 660rpx;margin: 20rpx auto;background: #fff;padding:0 30rpx;border-radius: 10rpx;display: flex;flex-direction: row;flex: 1;justify-content: center}
+.search text{font-size: 30rpx;color:#88888D;display: inline-block;line-height: 66rpx;text-align: left;padding-left: 20rpx;height: 66rpx; }
+.search icon{ margin-top: 20rpx;}
+.gl_cont{background: #fff;}
+.gl_top{display: flex;flex-direction: row;border-bottom: 1rpx solid #EBEBEB}
+.right_top{float:right;width: 7%;margin-top: 3%;text-align: right }
+.right_top image{width: 27rpx;height: 27rpx;}
+.add_yiqi{width: 700rpx;margin: 0 auto;height: 66rpx;line-height: 66rpx;background:#35A7E9;font-size: 26rpx;color: #fff;border-radius: 10rpx;text-align: center }
+.box1{width: 100%;background: #fff;padding: 30rpx 0;margin-bottom: 20rpx;}
+.add_yiqi image{width: 19rpx;height: 19rpx;margin-right: 10rpx;}
+
+.swiper-tab{  
+    width: 86%;  
+    text-align: center;  
+    line-height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space:nowrap;
+    margin-left: 30rpx;
+  }  
+.swiper-tab-list{  font-size: 30rpx;  
+  display: inline-block;  
+  margin-right: 30rpx;
+}  
+.on{ color: #35A7E9;  
+    border-bottom: 5rpx solid #35A7E9;}  
+  
+.swiper-box{ display: block; min-height: 100%; width: 100%; overflow: hidden; }  
+.swiper-box view{  
+    text-align: center;  
+}  
+
+
+.box_list{display: flex;flex-direction: column;background: #fff;padding: 30rpx;margin-bottom: 20rpx;}
+.list_one{display: flex;flex-direction: row;border-bottom: 1rpx solid #ddd;padding-bottom: 30rpx;}
+.list_img image{width: 220rpx;height: 165rpx;margin-right: 20rpx;}
+.box_list .list_desc{display: flex;flex-direction: column;text-align: left}
+.title_name{font-size: 26rpx;color: #222;font-family: "PingFang-SC-Medium";height: 50rpx;line-height: 50rpx;}
+.desc_cont{font-size: 22rpx;color: #999;height: 35rpx;line-height: 35rpx;}
+.desc_cont:nth-of-type(3){margin-bottom: 10rpx;}
+.box_list .list_two{text-align: right;margin-top: 20rpx;}
+.list_two text{display: inline-block;width: 142rpx;height: 48rpx;line-height: 48rpx;border-radius: 24rpx;border: 1rpx solid #ddd;text-align: center;margin-left: 30rpx;font-size: 24rpx;color: #333;}
+
+.nav{position: fixed;bottom: 0;width: 100%;background: #fff;display: flex;flex-direction: row;height: 97rpx;}
+.nav_list{display: flex;flex-direction: column;width: 33%;text-align: center}
+.nav_list image{width: 35rpx;height: 34rpx;margin:15rpx auto 10rpx auto}
+.hover{color: #0096E1}
+
+.yuyue_btn{float: right;width: 144rpx;height: 49rpx;line-height: 49rpx;background:#0096E1;border-radius: 25rpx;color: #fff;text-align: center;font-size: 24rpx;}
+
+
+
+
+.tab{
+  padding-bottom: 200rpx;
+}
+
+.tab-left{ 
+  width: 100%; 
+  line-height: 160%; 
+  border-right: solid 1px gray; 
+  display: flex;
+  flex-direction: row;
+} 
+.tab-left view{ 
+  border-bottom: solid 1px red; 
+} 
+.tab-left .active{ 
+  color: #f00; 
+} 
+.tab-right{ 
+  line-height: 160%; 
+} 
+.tab-right .right-item{ 
+  display: none; 
+} 
+.tab-right .right-item.active{ 
+  display: block; 
+} 
+
+
+
+
+
+
+
+
+
+

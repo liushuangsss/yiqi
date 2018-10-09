@@ -1,0 +1,76 @@
+.search{width: 660rpx;margin: 20rpx auto;background: #fff;padding:0 30rpx;border-radius: 10rpx;display: flex;flex-direction: row;flex: 1;justify-content: center}
+.search text{font-size: 30rpx;color:#88888D;display: inline-block;line-height: 66rpx;text-align: left;padding-left: 20rpx;height: 66rpx; }
+.search icon{ margin-top: 20rpx;}
+.gl_cont{background: #fff;}
+.gl_top{display: flex;flex-direction: row;border-bottom: 1rpx solid #EBEBEB}
+.swiper-tab{  
+    width: 93%;  
+    text-align: center;  
+    line-height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space:nowrap;
+    margin-left: 30rpx;
+  }  
+.swiper-tab-list{  font-size: 30rpx;  
+  display: inline-block;  
+  width: 25%;
+}  
+.on{ color: #35A7E9; border-bottom: 5rpx solid #35A7E9;padding-bottom:15rpx;}    
+.swiper-box{ display: block; min-height: 100%; width: 100%; overflow: hidden; }  
+.swiper-box view{  
+    text-align: center;  
+}  
+.nav{position: fixed;bottom: 0;height: 97rpx;line-height: 97rpx;width: 100%;background: #fff;display: flex;flex-direction: row}
+.nav view image{width: 35rpx;height: 34rpx;}
+.nav view{display: flex;width: 33%;justify-content: center;align-items: center;flex-direction: column;line-height: 40rpx;}
+.tab{
+  padding-bottom: 200rpx;
+}
+
+.tab-left{ 
+  width: 100%; 
+  line-height: 160%; 
+  border-right: solid 1px gray; 
+  display: flex;
+  flex-direction: row;
+} 
+.tab-left view{ 
+  border-bottom: solid 1px red; 
+} 
+.tab-left .active{ 
+  color: #f00; 
+} 
+.tab-right{ 
+  line-height: 160%; 
+} 
+.tab-right .right-item{ 
+  display: none; 
+} 
+.tab-right .right-item.active{ 
+  display: block; 
+} 
+
+.author{width: 43rpx;height: 43rpx;border-radius: 50%;vertical-align: middle;margin-right: 10rpx;}
+.fush_list{background: #fff;padding: 30rpx;margin-bottom: 20rpx;}
+.fuli_tit{height:78rpx;line-height: 78rpx;border-bottom: 1rpx solid #ddd;font-size: 26rpx;color: #333;font-weight: bold }
+.sh_time{float: right;color: #999;font-weight: normal}
+.sh_xq{color: #808080;}
+.sh_yqcont{padding: 30rpx 0;display: flex;flex-direction: row}
+.yq_img{width:220rpx;height: 165rpx; }
+.yy_time{font-size: 22rpx;color: #222;background: #FAFAFA;border: 1rpx solid #E3E4E6;margin-right: 10rpx;padding: 0 10rpx;}
+.right_yqco{margin-left: 20rpx;}
+.shyq_name{font-size:26rpx;color: #222 }
+.shyq_status{font-size: 22rpx;color: #808080}
+.shyq_time{margin-top: 50rpx;}
+.xia_yq{width: 17rpx;height: 17rpx;float: right;margin-top: 10rpx;}
+
+.agree_sh{border-top: 1rpx solid #ddd;padding-top: 20rpx;text-align: right}
+.agree_sh text{display: inline-block;width:142rpx;height: 48rpx;line-height: 48rpx;text-align: center;border: 1rpx solid #ddd;border-radius: 24rpx;margin-left: 15rpx;font-size: 24rpx;color: #333 }
+.agree_sh .agree_active{border: 1rpx solid #0096E1;color: #0096E1;}
+
+
+
+
+

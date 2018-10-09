@@ -1,0 +1,32 @@
+<!--pages/chouse_time/chouse_time.wxml-->
+<view class='yiqi_box'>
+<!--100%name  -->
+  <view class='name mar16'>
+    <view class='names'>
+      <view>
+        <view class='font30'><text>开始时间</text><view class='time'><text>2018-07-31</text><image src='/images/yiqi_time.png'></image></view></view>
+         <block wx:for="{{list}}" wx:for-index="i" wx:key="id">
+          <view class='chouse1'>
+            <view class='choose_status {{show==item.id?"choose_status_active":""}}' bindtap='tabsta' data-id="{{item.id}}"><text>{{item.value}}</text></view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='name mar16'>
+    <view class='names'>
+      <view>
+        <view class='font30'><text>结束时间</text><view class='time'><text>2018-07-31</text><image src='/images/yiqi_time.png'></image></view></view>
+         <block wx:for="{{lists}}" wx:for-index="i" wx:key="id">
+          <view class='chouse1'>
+            <view class='choose_status {{shows==item.id?"choose_status_active":""}}' bindtap='tabstas' data-id="{{item.id}}"><text>{{item.value}}</text></view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='queren'>
+    <button>确认</button>
+  </view>
+</view>
+

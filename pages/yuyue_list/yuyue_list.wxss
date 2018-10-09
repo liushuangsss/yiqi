@@ -1,0 +1,4 @@
+page{background: #fff;}
+.list1{font-size: 30rpx;color: #333;margin: 0 30rpx;height:105rpx;line-height: 105rpx; border-bottom: 1rpx solid #ddd;}
+.right_jt{float: right;width: 18rpx;height: 19rpx;margin-top: 45rpx;}
+

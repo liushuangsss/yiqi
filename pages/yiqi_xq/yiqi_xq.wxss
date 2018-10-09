@@ -1,0 +1,18 @@
+.xq_img{width: 235rpx;height: 259rpx;margin: 0 auto}
+.xq_box{width: 100%;text-align: center;background: #fff;padding: 30rpx 0;margin-bottom: 20rpx;}
+.xq_title{font-size: 28rpx;color: #222;font-family: "PingFang-SC-Medium";margin-bottom: 20rpx;}
+.xq_list{background: #fff;padding: 30rpx;margin-bottom: 20rpx;}
+.con_list{font-size: 24rpx;color:#999;display: inline-block;width: 100%;line-height: 40rpx;}
+.cons{border-bottom: 1rpx solid #ddd;padding-bottom: 30rpx;margin-bottom: 40rpx;}
+.info_list label{font-size: 28rpx;color: #999;width: 60rpx;margin-right: 30rpx;text-align: left}
+.info_list{margin: 20rpx 0;}
+.status{height: 100rpx;line-height: 100rpx;border-top: 1rpx solid #ddd;margin-top: 40rpx;}
+.status label{font-size: 28rpx;color: #999;margin-right: 20rpx;}
+.jianjie{padding: 30rpx;background: #fff;padding-bottom:100rpx;}
+.jianjie_title{display: inline-block;width: 100%;font-size: 26rpx;color: #999}
+
+.jianjie_title{display: inline-block;width: 100%;font-size: 26rpx;color: #999}
+.shuomming{display: inline-block;margin-top: 10rpx;font-size: 26rpx;line-height: 40rpx;margin-bottom: 10rpx;}
+
+.sub button{position: fixed;bottom: 0;width:100%;background:#999999;color: #fff;font-size: 30rpx;line-height: 78rpx;}
+.sub_xj button{position: fixed;bottom: 0;width:100%;background:#0096E1;color: #fff;font-size: 30rpx;line-height: 78rpx;}

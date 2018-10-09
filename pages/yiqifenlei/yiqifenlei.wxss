@@ -1,0 +1,190 @@
+/* pages/yiqifenlie/yiqifenlie.wxss */
+.yiqi_box{
+  width:100%;
+}
+.name{
+  width:100%;
+  background: #fff;
+  padding: 40rpx 0;
+  overflow: hidden;
+}
+.names{
+  width:94%;
+  margin: auto;
+}
+.font30{
+  font-size: 30rpx;
+  font-weight: bold;
+  overflow: hidden;
+}
+.choose_statuses{
+  float: left;
+  padding:20rpx 28rpx;
+  margin-right: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  border: 1px solid #E6E6E6;
+}
+.choose_statuss{
+  float: left;
+  width:162rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  margin-right: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  border: 1px solid #E6E6E6;
+}
+.choose_status_activees{
+  float: left;
+  width:162rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  margin-right: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  color: #0096E1;
+  border: 1px solid #0096E1;
+}
+.is_checked{
+  border: 1px solid #0096E1;
+  color: #0096E1;
+}
+.mar16{
+  margin-top: 16rpx;
+}
+.time{
+  width:50%;
+  float: right;
+  text-align: right;
+}
+.time image{
+  width:30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  padding-left: 10rpx;
+}
+.choose_status{
+  float: left;
+  width:199rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  border: 1px solid #E6E6E6;
+}
+.queren button{
+  width:610rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  background: #0096E1;
+  border-radius: 10rpx;
+  text-align: center;
+  color:#fff;
+  margin: 30rpx auto;
+}
+.choose_status_active{float: left;
+  width:199rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  color: #0096E1;
+  border: 1px solid #0096E1;}
+  .choose_status_actives{float: left;
+  padding:20rpx 28rpx;
+  margin-right: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  color: #0096E1;
+  border: 1px solid #0096E1;}
+
+  .modalBox{
+  width: 100%;
+  font-size: 32rpx;
+}
+.box{
+  margin: 0 auto;
+  width: 630rpx;
+}
+.calendarTitle{
+  /* margin: 0 auto;
+  width: 630rpx; */
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #ddd;
+}
+.calendarBox{
+  /* width: 630rpx; */
+  width:100%;
+  margin: 0 auto;
+  border:1rpx solid #ddd;
+}
+.week{
+  display: inline-block;
+  width:90rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.dateBtn{
+  width:100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  
+}
+ .dateBtn>button{
+  width: 45%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 36rpx;
+} 
+/* 模态框 */  
+  
+.modal-mask {  
+  width: 100%;  
+  height: 100%;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  background: #000;  
+  opacity: 0.5;  
+  overflow: hidden;  
+  z-index: 9000;  
+}  
+  
+.modal-dialog {  
+  width: 85%;  
+  padding: 100rpx 30rpx 30rpx 30rpx;  
+  overflow: hidden;  
+  position: fixed;  
+  top: 20%;  
+  left: 0;  
+  right: 0;  
+  margin: 0 auto;  
+  z-index: 9999;  
+  background: rgba(255, 255, 255, 1);  
+  border-radius: 5rpx;  
+}
+.prev{float: left;font-size: 24rpx;color: #006eff;padding-left: 30rpx;}
+.next{float: right;font-size: 24rpx;padding-right: 30rpx;color: #006eff}

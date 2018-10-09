@@ -1,0 +1,16 @@
+.box{padding: 30rpx;background: #fff;display: flex;flex-direction: row;margin-bottom: 20rpx;}
+.img1{width:220rpx;height: 165rpx;margin-right: 20rpx; }
+.title{font-size: 26rpx;color: #222;display: inline-block;margin-bottom: 30rpx}
+.time{display: inline-block;width: 170rpx;height: 42rpx;line-height: 42rpx;font-size: 22rpx;text-align: center;color: #222;border: 1rpx solid #E3E4E6;background: #fafafa}
+.sub{width: 701rpx;height: 78rpx;line-height: 78rpx;background: #0096E1;margin: 60rpx auto;border-radius:10rpx; }
+.sub button{line-height: 78rpx;color: #fff;font-size: 30rpx;}
+
+
+
+
+
+
+
+
+
+

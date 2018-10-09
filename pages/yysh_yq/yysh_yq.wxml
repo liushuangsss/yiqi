@@ -1,0 +1,88 @@
+<view class='search'>
+  <icon type='search' size='12'></icon><text>搜索</text>
+</view>
+<view class='gl_cont'>
+  <view class='gl_top'>
+   <view class="swiper-tab" bindtap="tabFun"> 
+      <view class="swiper-tab-list" id="tab-hd01" data-id="0"><text class="{{tabArr.curHdIndex=='0'? 'on' : ''}}">全部</text></view> 
+      <view class="swiper-tab-list" id="tab-hd02" data-id="1"><text class=" {{tabArr.curHdIndex=='1'? 'on' : ''}}">预约申请</text></view> 
+      <view class="swiper-tab-list" id="tab-hd03" data-id="2"><text class=" {{tabArr.curHdIndex=='2'? 'on' : ''}}">预约成功</text></view> 
+      <view class="swiper-tab-list" id="tab-hd04" data-id="3"><text class=" {{tabArr.curHdIndex=='3'? 'on' : ''}}">预约失败</text></view> 
+    </view> 
+  </view>  
+</view>  
+
+
+<view class="tab"> 
+  
+  
+  <view class="tab-right"> 
+    <view class="right-item {{tabArr.curBdIndex=='0'? 'active' : ''}}">
+      <view class='fush_list'>
+        <view class='fuli_tit'><image src='/images/yiqi_img25.png' class='author'></image>瑶瑶i　152****0825 <text class='sh_time'>2018年6月19日</text></view>
+        <view class='sh_yqcont'>
+          <view>
+            <image src='/images/yiqi_img26.png' class='yq_img'></image>
+          </view>
+          <view class='right_yqco'>
+            <view class='shyq_name'>电感耦合等离子体质谱（ICP-MS）</view>
+            <view class='shyq_status'>仪器状态：维修</view>
+            <view class='shyq_time'><text class='yy_time'>09:00~10:00</text><text class='yy_time'>09:00~10:00</text><image src='/images/yiqi_img32.png' class='xia_yq'></image></view>
+          </view>
+        </view>
+         <view class='agree_sh'>
+            <text>不同意</text>
+            <text class='agree_active'>同意</text>
+          </view>
+      </view>
+      <view class='fush_list'>
+        <view class='fuli_tit'><image src='/images/yiqi_img25.png' class='author'></image>瑶瑶i　152****0825 <text class='sh_time'>2018年6月19日</text></view>
+        <view class='sh_yqcont'>
+          <view>
+            <image src='/images/yiqi_img26.png' class='yq_img'></image>
+          </view>
+          <view class='right_yqco'>
+            <view class='shyq_name'>电感耦合等离子体质谱（ICP-MS）</view>
+            <view class='shyq_status'>仪器状态：维修</view>
+            <view class='shyq_time'><text class='yy_time'>09:00~10:00</text><text class='yy_time'>09:00~10:00</text><image src='/images/yiqi_img32.png' class='xia_yq'></image></view>
+          </view>
+        </view>
+        <view class='agree_sh'>
+          <text>取消预约</text>
+        </view>
+      </view>
+      <view class='fush_list'>
+        <view class='fuli_tit'><image src='/images/yiqi_img25.png' class='author'></image>瑶瑶i　152****0825 <text class='sh_time'>2018年6月19日</text></view>
+        <view class='sh_yqcont'>
+          <view>
+            <image src='/images/yiqi_img26.png' class='yq_img'></image>
+          </view>
+          <view class='right_yqco'>
+            <view class='shyq_name'>电感耦合等离子体质谱（ICP-MS）</view>
+            <view class='shyq_status'>仪器状态：维修</view>
+            <view class='shyq_time'><text class='yy_time'>09:00~10:00</text><text class='yy_time'>09:00~10:00</text><image src='/images/yiqi_img32.png' class='xia_yq'></image></view>
+          </view>
+        </view>
+         <view class='agree_sh'>
+          您已拒绝该预约，原因是机器维修中
+        </view>
+      </view>
+    </view> 
+    <view class="right-item {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+      1 
+    </view> 
+    <view class="right-item {{tabArr.curBdIndex=='2'? 'active' : ''}}">tab-bd03</view> 
+    <view class="right-item {{tabArr.curBdIndex=='3'? 'active' : ''}}">tab-bd04</view> 
+  </view>
+ </view>
+
+
+
+
+<view class='nav'>
+  <view><image src='/images/yiqi_img13.png'></image>预约管理</view>
+  <view><image src='/images/yiqi_img22.png'></image>仪器管理</view>
+  <view><image src='/images/yiqi_img28.png'></image>个人中心</view>
+</view>
+
+

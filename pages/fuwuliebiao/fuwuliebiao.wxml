@@ -1,0 +1,28 @@
+<!--pages/fuwuliebiao/fuwuliebiao.wxml-->
+<view class='fuwuliebiao_box'>
+  <view class='list_box'>
+    <view class='fenlei_list'>光学仪器</view>
+    <view class='fenlei_list'>生命科学仪器</view>
+    <view class='fenlei_list'>测量/计量仪器</view>
+  </view>
+  <view class='box1'>
+    <view class='add_yiqi'><image src='/images/yiqi_img24.png'></image>新增服务</view>
+  </view>
+  <view class='leibie'>
+    <view class='name'>
+      <view class='first'><text>类别名称</text><text>某某类别</text></view>
+    </view>
+    <view class='name'>
+      <view class='two'><text>服务描述</text><textarea class='text1' placeholder='请输入详细描述'></textarea></view>
+    </view>
+    <view class='name'>
+      <view class='two'>
+        <text>仪器状态</text>
+        <view class='yuyue'><view bindtap='xuanzhong' class='yuye1 {{show?"can":"not"}}'><text>可预约</text><image src='/images/yiqi_img18.png'></image></view><view class='yuye1 {{show?"not":"can"}}' bindtap='xuanzhong' ><text>不可预约</text><image src='/images/yiqi_img18.png'></image></view></view>
+      </view>
+    </view>
+  </view>
+  <view class='baocun'>
+    <button>保存</button>
+  </view>
+</view>

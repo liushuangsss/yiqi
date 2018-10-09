@@ -1,0 +1,8 @@
+<view class='login_box'>
+  <image src='/images/yiqi_img27.png' class='bg'></image>
+  <image src='/images/yiqi_img1.png' class='login'></image>
+  <text class='login_desc'>Hi~请先选择您的身份登录即可进入仪器预约小程序</text>
+  <view class='login_btn'>
+    <button bindtap='yonghu'>普通用户</button><button bindtap='fuwushang'>服务商</button>
+  </view>
+</view>

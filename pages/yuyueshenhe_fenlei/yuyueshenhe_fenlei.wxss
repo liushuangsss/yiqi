@@ -1,0 +1,93 @@
+/* pages/yuyueshenhe_fenlei/yuyueshenhe_fenlei.wxss */
+
+/* pages/fuwushenqing/fuwushenqing.wxss */
+
+.fuwushenqingbox{
+  padding: 30rpx;
+  background: #fff;
+  margin-bottom: 100rpx;
+}
+.fuwuleixing{
+  height: 84rpx;
+  line-height: 84rpx;
+  margin-top: 26rpx;
+  border-bottom: 1rpx solid rgba(221,221,221,1);
+  }
+.fuwuleixingt1{
+  font-size: 30rpx;
+  margin-right: 40rpx;
+}
+.wenzi{
+  line-height: 40rpx;
+  font-size: 26rpx;
+  padding-top:20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid rgba(221,221,221,1);
+}
+.coh{  color: #808080;}
+.fuwuleixingt2{
+  font-size: 26rpx;
+}
+.fuwumiaoshu input{
+  height: 60rpx;
+  line-height: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 26rpx;
+
+}
+.miaoshu{
+  height: 64rpx;
+  line-height: 84rpx;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+}
+.photo{
+  width:100%;
+  height: 152rpx;
+  padding: 38rpx 0;
+  border-bottom: 1px solid rgba(221,221,221,1);
+}
+.photo image{
+  width:152rpx;
+  height: 152rpx;
+  margin-right: 75rpx; 
+}
+.danwei{
+  width:100%;
+  overflow: hidden;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid rgba(221,221,221,1);
+  
+}
+.danwei:last-child{border-bottom: 0}
+.danwei view{
+  float: left;
+}
+.name{
+  width:20%;
+  height: 30rpx;
+  line-height: 30rpx;
+  display: block;
+  font-size: 30rpx;
+  margin-top: 50rpx;
+}
+.danwei .danwei2{
+  font-size: 26rpx;
+  padding-top: 48rpx;
+}
+.sub{
+  width:100%;
+  height: 120rpx;
+  padding-top: 140rpx;
+  line-height: 260rpx;
+}
+.sub button{
+  width:690rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  text-align: center;
+  margin: auto;
+  border-radius: 10rpx;
+  background: #0096E1; 
+  color: #fff;
+}

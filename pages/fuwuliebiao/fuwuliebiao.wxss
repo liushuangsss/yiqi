@@ -1,0 +1,124 @@
+/* pages/fuwuliebiao/fuwuliebiao.wxss */
+.fuwuliebiao_box{
+  width:100%;
+}
+.xinzeng{
+  width:100%;
+  height: 66rpx;
+  line-height: 126rpx;
+  padding: 30rpx 0;
+}
+.xinzeng .zeng{
+  width:700rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  background: #35A7E9;
+  color: #fff;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  margin: auto;
+}
+.zeng image{
+  width:30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-right: 8rpx;
+}
+.leibie{
+  width:100%;
+  background: #fff;
+}
+.name{
+  width:94%;
+  margin: auto;
+}
+.first{
+  border-bottom: 1px solid #DDDDDD;
+  padding-top: 40rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  padding-bottom: 10rpx;
+}
+.first text{
+  float: left;
+  width:20%;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-right: 20rpx;
+}
+.first input{
+  float: left;
+  width:70%;
+}
+.two{
+  width:100%;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  padding-top: 40rpx;
+}
+.two .text1{
+  width:100%;
+  margin-top: 30rpx;
+  border-bottom: 1px solid #DDDDDD;
+  height: 150rpx;
+}
+.yuyue{
+  width:100%;
+  font-size: 26rpx;
+  overflow: hidden;
+  margin-top: 30rpx;
+  padding-bottom: 220rpx;
+}
+.yuyue text{
+  width:141rpx;
+  height:44rpx;
+  float: left;
+  text-align: center;
+  line-height: 42rpx;
+}
+.yuye1{
+  width:141rpx;
+  height:44rpx;
+  float: left;
+  position: relative;
+  margin-right: 30rpx;
+}
+.can{
+  border: 1px solid #35A7E9 ;
+  background: #fff;
+  color: #35A7E9;
+}
+.yuye1 image{
+  width:18rpx;
+  height: 18rpx;
+  position: absolute;
+  right: -1rpx;
+  bottom: -1rpx;
+}
+.not{
+  border: 1px  solid #E6E6E6;
+  background: #EEEEEE;
+}
+.baocun{
+  padding-top:65rpx;
+  padding-bottom: 122rpx;
+}
+.baocun button{
+  width:610rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  text-align: center;
+  background: #0096E1;
+  color: #fff;
+  border-radius: 10rpx;
+  margin: auto;
+}
+.box1{width: 100%;padding: 30rpx 0;}
+.add_yiqi image{width: 19rpx;height: 19rpx;margin-right: 10rpx;}
+.add_yiqi{width: 700rpx;margin: 0 auto;height: 66rpx;line-height: 66rpx;background:#35A7E9;font-size: 26rpx;color: #fff;border-radius: 10rpx;text-align: center }
+.disno{display: none}
+.not image{display: none}
+
+.fenlei_list{font-size: 30rpx;color: #333;height:105rpx;line-height: 105rpx;border-bottom: 1rpx solid #ddd; }
+.list_box{background: #fff;padding: 0 30rpx;}

@@ -1,0 +1,17 @@
+.info_avator{width: 111rpx;height: 130rpx;margin: 20rpx auto}
+.info_box{background: #fff;display: flex;flex-direction: column;text-align: center;padding-bottom: 30rpx;margin-bottom: 20rpx;}
+.info_add{font-size: 30rpx;color: #333;display: inline-block;line-height: 50rpx;font-weight: bold}
+.info_tel{font-size: 24rpx;color: #999;}
+
+.info_cont{background: #fff;padding:0 30rpx;}
+.info_list{height: 91rpx;line-height: 91rpx;border-bottom: 1rpx solid #ddd;}
+.daibiao{width: 27rpx;height: 27rpx;margin-right: 10rpx;vertical-align: middle}
+.right_jt{float: right;width: 18rpx;height: 19rpx;margin-top: 35rpx;}
+.info_list:last-child{border-bottom: 0}
+
+.nav{position: fixed;bottom: 0;width: 100%;background: #fff;display: flex;flex-direction: row;height: 97rpx;}
+.nav_list{display: flex;flex-direction: column;width: 33%;text-align: center}
+.nav_list image{width: 35rpx;height: 34rpx;margin:15rpx auto 10rpx auto}
+.hover{color: #0096E1}
+
+.xiazai{width: 27rpx;height: 27rpx;position: absolute;top: 30rpx;right: 30rpx;}

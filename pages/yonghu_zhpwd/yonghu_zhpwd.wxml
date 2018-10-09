@@ -1,0 +1,20 @@
+<view class='login_box'>
+  <image src='/images/yiqi_img1.png' class='login_img'></image>
+  <view class='login_list'>
+    <label>手机</label><input type='text' placeholder='请输入手机'></input>
+  </view>
+  <view class='login_list'>
+    <label>验证码</label><input type='text' placeholder='请输入验证码'></input><button class='getyzm'>获取验证码</button>
+  </view>
+  <view class='login_list'>
+    <label>密码</label><input type='text' placeholder='请输入密码'></input>
+  </view>
+  <view class='login_list'>
+    <label>确认密码</label><input type='text' placeholder='请确认密码'></input>
+  </view>
+  <view>
+    <button class="login_btn">提交</button>
+  </view>
+</view>
+
+

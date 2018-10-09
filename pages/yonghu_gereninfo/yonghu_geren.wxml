@@ -1,0 +1,25 @@
+<view class='info_box'>
+  <image src='/images/yiqi_img6.png' class='xiazai'></image>
+  <image src='/images/yiqi_img4.png' class='info_avator'></image>
+  <text class='info_add'>瑶瑶i</text>
+  <text class='info_tel'>152****0825</text>
+</view>
+<view class='info_cont'>
+  <view class='info_list' bindtap='gereninfo'><image src='/images/yiqi_img7.png' class='daibiao'></image>个人信息<image src='/images/yiqi_img5.png' class='right_jt'></image></view>
+   <view class='info_list' bindtap='history'><image src='/images/yiqi_img11.png' class='daibiao'></image>历史预约<image src='/images/yiqi_img5.png' class='right_jt'></image></view>
+
+  <view class='info_list' bindtap=''><image src='/images/yiqi_img9.png' class='daibiao'></image>消息中心<image src='/images/yiqi_img5.png' class='right_jt'></image></view>
+  <view class='info_list' bindtap=''><image src='/images/yiqi_img10.png' class='daibiao'></image>修改密码<image src='/images/yiqi_img5.png' class='right_jt'></image></view>
+</view>
+
+<view class='nav'>
+  <view class='nav_list' bindtap='yuyuegl'>
+    <image src='/images/yiqi_img13.png'></image>预约管理
+  </view>
+  <view class='nav_list' bindtap='yqgl'>
+    <image src='/images/yiqi_img15.png'></image>仪器管理
+  </view>
+  <view class='nav_list hover'>
+    <image src='/images/yiqi_img14.png'></image>个人中心
+  </view>
+</view>

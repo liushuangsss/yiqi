@@ -1,0 +1,62 @@
+<view class='xq_box'>
+  <image src='/images/yiqi_img19.png' class='xq_img'></image>
+</view>
+<view class='xq_list'>
+  <view class='xq_title'>电感耦合等离子体质谱（ICP-MS）</view>
+  <view class='cons'>
+    <text class='con_list'>品 牌：赛默飞</text>
+    <text class='con_list'>型 号：iCAP Qc</text>
+    <text class='con_list'>类 别:  环境监测仪器</text>
+  </view>
+  <view class='info_list'>
+    <label>地址</label><text>北京</text>
+  </view>
+  <view class='info_list'>
+    <label>地址</label><text>交易担保 · 快速测试 · 结果分析</text>
+  </view>
+  <view class='status'>
+    <label>仪器状态</label>
+    <block wx:for="{{list}}" wx:for-index="i" wx:key="id">
+      <view class='choose_status {{show==item.id?"choose_status_active":"disno"}}' bindtap='tabsta' data-id="{{item.id}}"   >
+        <text>{{item.value}}</text>
+        <image src='/images/yiqi_img18.png' class='{{show==item.id?"status_img":"disno"}}'></image>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class='jianjie'>
+  <view class='xq_title'>仪器简介</view>
+  <view class='jianjie_cont'>
+    <text class='jianjie_title'>性能参数：</text>
+    <text class='shuomming'>
+    1、灵敏度 
+      低质量数（Li）：>40M cps/ppm 
+      中质量数(Y或In): > 150 M cps/ppm 
+      高质量数(Tl或U): > 200 M cps/ppm 2、随机背景：
+      标准模式下，仪器信噪比>150M(1ppm中质量元素溶液    
+      灵敏度/随机背景) 
+      氧化物离子(CeO+/Ce+)  {{'<'}} 2 % 4.4 仪器检出限 
+    3、检出限轻
+      质量元素:  {{'<'}} 0.5 ppt 
+      中质量数元素:  {{'<'}}0.1 ppt 
+      高质量数元素:  {{'<'}} 0.1 ppt 
+    4、稳定性
+      短期稳定性 (RSD):  {{'<'}} 2% 
+      长期稳定性 (RSD):  {{'<'}} 3% (2小时)
+      质谱校正稳定性:  {{'<'}} 0.025 amu/8h
+    </text>
+    <text class='jianjie_title'>主要功能与用途：</text>
+    <text class='shuomming'>1、环境试样：如淡水、海水、岩石、土壤、污泥、固液废弃物等
+2、半导体的各种材料、试剂的痕量污染物分析：如试剂中痕量金属元素分析，高纯金属的杂质元素分析等
+3、食品分析：如奶粉、烟、酒、饮料、油、大米、小麦、肉类、鱼类、火锅底料等
+4、其他分析：纺织品、化妆品、玻璃镀层，陶瓷釉料，橡胶塑料等物质中的金属元素分析
+5、样品中同位素比值分析
+    </text>
+  </view>
+</view>
+
+
+<view class='sub'>
+  <button>下架该仪器</button>
+</view>

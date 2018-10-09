@@ -1,0 +1,53 @@
+<view class='xiaoxi_box'>
+  <view class='xiaoxi_title'>
+    <text>预约通知</text>
+    <text class='xiaoxi_time'>18/07/18</text>
+  </view>
+  <view class='xiaoxi_cont'>
+    <view><image src='/images/yiqi_img3.png' class='img1'></image></view>
+    <view class='xiaoxi_cont2'>
+      <text class='yuyue_info'>用户 <text>瑶瑶i 152****0825</text> 预约了<text>13:00~16:00</text>检测,仪器是电感耦合等离子体质谱。用户 <text>瑶瑶i 152****0825</text> 预约了<text>13:00~16:00</text>检测,仪器是电感耦合等离子体质谱
+      </text>
+      <text class='yuyue_gl'>预约成功</text>
+    </view>
+  </view>
+</view>
+<view class='xiaoxi_box'>
+  <view class='xiaoxi_title'>
+    <text>预约通知</text>
+    <text class='xiaoxi_time'>18/07/18</text>
+  </view>
+  <view class='xiaoxi_cont'>
+    <view><image src='/images/yiqi_img3.png' class='img1'></image></view>
+    <view class='xiaoxi_cont2'>
+      <text class='yuyue_info'>用户 <text>瑶瑶i 152****0825</text> 预约了<text>13:00~16:00</text>检测,仪器是电感耦合等离子体质谱。用户 <text>瑶瑶i 152****0825</text> 预约了<text>13:00~16:00</text>检测,仪器是电感耦合等离子体质谱
+      </text>
+      <text class='yuyue_gl' >预约失败</text>
+    </view>
+  </view>
+</view>
+<!-- <view class='xiaoxi_box'>
+  <view class='xiaoxi_title'>
+    <text>授权通知</text>
+    <text class='xiaoxi_time'>18/07/18</text>
+  </view>
+  <view class='xiaoxi_cont'>
+    <view class='xiaoxi_cont2'>
+      <text class='yuyue_info'>用户 <text>瑶瑶i 152****0825</text> 预约了<text>13:00~16:00</text>检测,仪器是电感耦合等离子体质谱。用户 <text>瑶瑶i 152****0825</text> 预约了<text>13:00~16:00</text>检测,仪器是电感耦合等离子体质谱
+      </text>
+      <text class='yuyue_gl' bindtap='sqgl'>授权管理</text>
+    </view>
+  </view>
+</view> -->
+ <view class='xiaoxi_box'>
+  <view class='xiaoxi_title'>
+    <text>系统消息</text>
+    <text class='xiaoxi_time'>18/07/18</text>
+  </view>
+  <view class='xiaoxi_cont'>
+    <view class='xiaoxi_cont2'>
+      <text class='yuyue_info'>用户 <text>瑶瑶i 152****0825</text> 预约了<text>13:00~16:00</text>检测,仪器是电感耦合等离子体质谱。用户 <text>瑶瑶i 152****0825</text> 预约了<text>13:00~16:00</text>检测,仪器是电感耦合等离子体质谱
+      </text>
+    </view>
+  </view>
+</view> 

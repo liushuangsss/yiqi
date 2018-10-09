@@ -1,0 +1,8 @@
+<radio-group class="radio-group" bindchange="radioChange" color="#0096E1">
+  <label class="radio" wx:for="{{items}}">
+    <radio  color="#0096E1" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+<view class='success_btn'>
+  <button>确认并登录</button>
+</view>

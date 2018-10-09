@@ -1,0 +1,146 @@
+.box{
+  background: #fff;
+}
+.swiper-tab{  
+    width:52%;  
+    text-align: center;  
+    line-height: 80rpx;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space:nowrap;
+    margin: 0 auto;
+    padding: 30rpx 0;
+  }  
+.swiper-tab-list{  
+  font-size: 30rpx;  
+  display: inline-block;  
+   width: 49%;
+   text-align: center;
+   height: 67rpx;line-height: 67rpx;
+   border: 2rpx solid #0096E1;
+   color: #0096E1;
+} 
+.swiper-tab-list:nth-of-type(1){
+  border-bottom-left-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+} 
+.swiper-tab-list:nth-of-type(2){
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+.on{  
+  border: 2rpx solid #0096E1;
+  background: #0096E1;
+  color: #fff;
+}  
+.swiper-box{ display: block; min-height: 100%; width: 100%; overflow: hidden; }  
+.swiper-box view{  
+    text-align: center;  
+}  
+
+
+.tab-right .right-item{ 
+  display: none; 
+} 
+.tab-right .right-item.active{ 
+  display: block; 
+} 
+
+
+
+
+.cale_box{width: 100%;height: 95rpx;line-height: 66rpx;background:#EEEFF0; padding-top: 25rpx; }
+.cale_box input{
+  width:94%;
+  height: 66rpx;
+  text-align: center;
+  background: #fff;
+  border-radius: 10rpx;
+  margin: auto;
+}
+.yiqi{
+  width:94%;
+  margin: auto;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  overflow: hidden;
+}
+.flot{
+  float:right;
+}
+.flot text{
+  font-weight: bold;
+}
+.cohui{
+  color: #808080;
+}
+.lizibox{
+  width:100%;
+  height: 47rpx;
+  line-height: 47rpx;
+  background: #E5F4FC;
+}
+.lizi{
+  width:94%;
+  margin: auto;
+  overflow: hidden;
+}
+.win{
+  width:94%;
+  margin: auto;
+}
+.week{
+  font-size: 24rpx;
+}
+.shenqing{
+  font-size: 26rpx;
+  padding-left: 30rpx;
+}
+.bian1{
+  border-left: 5rpx solid #0096E1;
+}
+.bian2{
+  border-left: 5rpx solid #55B456;
+}
+.botm{
+  margin-bottom: 34rpx;
+}
+.botm,.time,.time1{
+  padding-left: 32rpx;
+}
+.time text{
+  width:170rpx;
+  height: 40rpx;
+  border: 1rpx solid #E2E3E5;
+  background: #FAFAFA;
+  margin-right: 10rpx;
+}
+.padtop{
+  margin-top: 34rpx;
+  margin-bottom: 90rpx;
+}
+.tops{
+  margin-top: 23rpx;
+}
+.image2{
+  width:20rpx;
+  height: 20rpx;
+  float: right;
+  margin-top: 42rpx;
+  margin-left: 10rpx;
+}
+.marg3{
+  margin-top:40rpx;
+  margin-bottom: 40rpx;
+}
+
+
+
+
+
+
+
+
+
+
